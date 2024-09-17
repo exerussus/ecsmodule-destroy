@@ -5,15 +5,13 @@
 
 ````csharp
         
-        /// <summary> Вызывает Action сразу после получения DeadMark в системе DamageDealer и HealthRegeneration.
-        /// Работает только при включенном HasDestroySystem в HealthSettings.</summary>
+        /// <summary> Вызывает Action сразу после получения DeadMark.</summary>
         public struct AfterDyeAction : IEcsComponent
         {
             public Action<int> Value; 
         }
         
-        /// <summary> Вызывает Action прямо перед уничтожением Entity. НЕ удаляйте Entity в этом Action.
-        /// Работает только при включенном HasDestroySystem в HealthSettings.</summary>
+        /// <summary> Вызывает Action прямо перед уничтожением Entity. НЕ удаляйте Entity в этом Action.</summary>
         public struct BeforeDestroyAction : IEcsComponent
         {
             public Action<int> Value; 
