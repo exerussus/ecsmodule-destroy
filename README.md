@@ -5,7 +5,7 @@
 
 ````csharp
         
-        /// <summary> Вызывает Action сразу после получения DeadMark.</summary>
+        /// <summary> Вызывает Action сразу после получения DeadMark. НЕ удаляйте Entity в этом Action.</summary>
         public struct AfterDyeAction : IEcsComponent
         {
             public Action<int> Value; 
