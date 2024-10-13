@@ -11,5 +11,11 @@ namespace ECS.Modules.Exerussus.Destroy
         {
             fixedUpdateSystems.Add(new DestroySystem(Settings));
         }
+        
+        public DestroyGroup SetDestroyTimeDelay(float destroyTimeDelay)
+        {
+            Settings.DestroyTimeDelay = destroyTimeDelay;
+            return this;
+        }
     }
 }
