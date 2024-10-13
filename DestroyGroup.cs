@@ -6,7 +6,7 @@ namespace ECS.Modules.Exerussus.Destroy
 {
     public class DestroyGroup : EcsGroup<DestroyPooler>
     {
-        public DestroySettings Settings;
+        public DestroySettings Settings = new();
         protected override void SetFixedUpdateSystems(IEcsSystems fixedUpdateSystems)
         {
             fixedUpdateSystems.Add(new DestroySystem(Settings));
