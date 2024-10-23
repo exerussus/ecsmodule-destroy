@@ -10,10 +10,10 @@ namespace ECS.Modules.Exerussus.Destroy
         public void Initialize(EcsWorld world)
         {
             BeforeDestroyAction = new PoolerModule<DestroyData.BeforeDestroyAction>(world);
-            AfterDyeAction = new PoolerModule<DestroyData.AfterDyeAction>(world);
+            AfterDieAction = new PoolerModule<DestroyData.AfterDieAction>(world);
         }
 
         public PoolerModule<DestroyData.BeforeDestroyAction> BeforeDestroyAction;
-        public PoolerModule<DestroyData.AfterDyeAction> AfterDyeAction;
+        public PoolerModule<DestroyData.AfterDieAction> AfterDieAction;
     }
 }

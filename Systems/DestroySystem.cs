@@ -27,9 +27,9 @@ namespace ECS.Modules.Exerussus.Destroy.Systems
         {
             foreach (var entity in _initDestroyFilter)
             {
-                if (Pooler.AfterDyeAction.Has(entity))
+                if (Pooler.AfterDieAction.Has(entity))
                 {
-                    ref var afterDyeActionData = ref Pooler.AfterDyeAction.Get(entity);
+                    ref var afterDyeActionData = ref Pooler.AfterDieAction.Get(entity);
                     afterDyeActionData.Value.Invoke(entity);
                 }
                 

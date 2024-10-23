@@ -7,7 +7,7 @@ namespace ECS.Modules.Exerussus.Destroy
     {
         /// <summary> Вызывает Action сразу после получения DeadMark в системе DamageDealer и HealthRegeneration.
         /// Работает только при включенном HasDestroySystem в HealthSettings.</summary>
-        public struct AfterDyeAction : IEcsComponent
+        public struct AfterDieAction : IEcsComponent
         {
             public Action<int> Value; 
         }
