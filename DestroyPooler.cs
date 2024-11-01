@@ -7,7 +7,7 @@ namespace ECS.Modules.Exerussus.Destroy
 {
     public class DestroyPooler : IGroupPooler
     {
-        public void Initialize(EcsWorld world)
+        public virtual void Initialize(EcsWorld world)
         {
             BeforeDestroyAction = new PoolerModule<DestroyData.BeforeDestroyAction>(world);
             AfterDieAction = new PoolerModule<DestroyData.AfterDieAction>(world);
