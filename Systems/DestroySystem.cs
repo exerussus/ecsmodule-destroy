@@ -1,5 +1,6 @@
 ﻿using ECS.Modules.Exerussus.Health;
 using Exerussus._1EasyEcs.Scripts.Core;
+using Exerussus.EasyEcsModules.BasicData;
 using Leopotam.EcsLite;
 
 namespace ECS.Modules.Exerussus.Destroy.Systems
